@@ -6,7 +6,7 @@ let card = document.querySelector(".card");
 let icon = document.getElementById("icon");
 let temp = document.getElementById("temp_f");
 let btn = document.getElementById("btn");
-let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`;
+let url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`;
 
 getData = () => {
   fetch(url)
@@ -33,7 +33,7 @@ btn.addEventListener("click", function (event) {
   event.preventDefault();
   city = document.getElementById("city-name").value;
   console.log(city);
-  let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`;
   fetch(url)
     .then((res) => res.json()) // parse response as JSON
     .then((data) => {
