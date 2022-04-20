@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Gray Sky</title>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <form action="">
+          <label for="city-name">Enter City Name</label>
+          <input placeholder="Houston" autofocus id="city-name" type="text" />
+          <button id="btn" type="submit">Enter</button>
+        </form>
+        <section class="card--top">
+          <span id="name"></span>
+          <span id="text"></span>
+        </section>
+        <section class="card--middle">
+          <img id="icon" src="" alt="Icon" />
+          <span id="temp_f"></span>
+        </section>
+        <section class="card--bottom">
+          <div>
+            <small>MPH</small> <br />
+            <span id="wind_mph"></span>
+          </div>
+          <div>
+            <small>WDir</small> <br />
+            <span id="wind_dir"></span>
+          </div>
+          <div>
+            <small>Hu</small> <br />
+            <span id="humidity"></span>
+          </div>
+          <div>
+            <small>UV</small> <br />
+            <span id="uv"></span>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <small>Created by Billy Rodriguez</small>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
